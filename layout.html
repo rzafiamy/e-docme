@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+    <link href="lib/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link href="media/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">YourAppName</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+        <!-- Hero section -->
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center" style="flex-grow: 1;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Welcome!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="media/images/welcome.svg" alt="image welcome missing" width="100%">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Our services section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Service 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Service 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Service 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Pricing</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Silaky</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Evo</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Feno</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>MyCompany is a world-leading provider of software solutions. Our products are used by millions of people worldwide. We are committed to delivering reliable and user-friendly solutions to our customers.</p>
+                    <p>Our team consists of highly skilled professionals who are passionate about technology and innovation. We believe in creating value for our customers through our products and services.</p>
+                    <p>We are constantly striving to improve and innovate, and we always put our customers' needs first. Thank you for choosing MyCompany.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Our team video section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Our Featured Video</h2>
+            <div class="row">
+                <div class="col-lg-8 d-flex justify-content-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p>This is our featured video. It provides an overview of our products and services, and explains how we can help you achieve your goals. We hope you find it informative and helpful.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is cloud computing?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more accordion items for more questions -->
+            </div>
+        </div>
+        <!-- Our blogs section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Our Blogs</h2>
+            <div class="row  flex-row flex-nowrap overflow-auto">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path-to-your-image" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path-to-your-image" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path-to-your-image" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path-to-your-image" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path-to-your-image" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our team section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Our Team Members</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card circle-card">
+                        <img src="media/images/pic_profile.svg" class="card-img-top" alt="Administrator">
+                        <div class="card-body">
+                            <h5 class="card-title">Administrator</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card circle-card">
+                        <img src="media/images/pic_profile.svg" class="card-img-top" alt="Technician">
+                        <div class="card-body">
+                            <h5 class="card-title">Technician</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card circle-card">
+                        <img src="media/images/profile_pic.svg" class="card-img-top" alt="Business Manager">
+                        <div class="card-body">
+                            <h5 class="card-title">Business Manager</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our gallery section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Our Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="media/images/jewelry.svg" data-lightbox="gallery">
+                        <img src="media/images/jewelry.svg" class="img-fluid" alt="Image 1">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="media/images/join.svg" data-lightbox="gallery">
+                        <img src="media/images/join.svg" class="img-fluid" alt="Image 2">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="media/images/judge.svg" data-lightbox="gallery">
+                        <img src="media/images/judge.svg" class="img-fluid" alt="Image 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - YourAppName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="media/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

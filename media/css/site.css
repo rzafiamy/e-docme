@@ -1,0 +1,44 @@
+body, html {
+    height: 100vh; /* Make the page fill the vertical viewport height */
+    color: #000; /* Change the text color to violet */
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+}
+.navbar {
+    background-color: #6c63ff; /* Change the navbar color to violet */
+}
+.navbar-brand, .nav-link {
+    color: #000 !important; /* Change the navbar text color to white */
+}
+
+.container {
+    flex-grow: 1; /* Allow the container to grow and fill the available space */
+}
+
+:root {
+    --bs-primary: #6c63ff !important;
+}
+.btn-primary {
+    background-color: #6c63ff !important;
+    border-color: #6c63ff !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #6a006a !important;
+    border-color: #6a006a !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: #550055 !important;
+    border-color: #550055 !important;
+}
+
+.nav-link.active {
+    color: #6c63ff !important;
+}
+
+.circle-card .card-img-top {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+}

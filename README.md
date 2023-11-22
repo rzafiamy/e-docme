@@ -7,6 +7,8 @@ YourAppName is a web application built with HTML, CSS, and JavaScript. It uses B
 - **Our Team Members**: This section introduces the team members with circular card design.
 - **Our Gallery**: This section showcases images in a responsive grid layout. Clicking on an image opens it in a lightbox, with the ability to navigate between images.
 
+![App Screenshot](./screenshot.png)
+
 ## Setup
 
 1. Clone the repository to your local machine.
